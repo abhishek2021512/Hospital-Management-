@@ -1,0 +1,13 @@
+def f():
+    global q, w, e, r, t, y
+    p1 = q.get()
+    p2 = w.get()
+    p3 = e.get()
+    p4 = r.get()
+    p5 = t.get()
+    p6 = y.get()
+    l = 'insert into hospital values("{}", "{}", "{}", "{}", "{}", "{}")'.format(p1, p2, p3, p4, p5, p6)
+    a.commit()
+    b.execute(l)
+
+    tkinter.messagebox.showinfo("YOU HAVE BEEN REGISTERED","/आप पंजीकृत हो गए हैं")
